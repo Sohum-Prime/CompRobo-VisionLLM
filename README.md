@@ -148,6 +148,28 @@ If you encounter any issues during the installation or usage of the VisionLLM
 App, please open an issue on the GitHub repository with a detailed description
 of the problem.
 
-## Usage Guidelines
+## System Architecture
 
+A system architecture diagram has been provided to assist with debugging and application modification for specific use-cases.
 
+```mermaid
+graph LR
+    A[CompRobo LLM-based Visual Transformer] -->|imports| C(("BlipProcessor,<br>BlipForConditionalGeneration,<br>DetrImageProcessor,<br>DetrForObjectDetection"))
+    A -->|imports| H(("torch,<br>os,<br>NamedTemporaryFile"))
+    A -->|imports| J((ChatOpenAI,<br>EmbeddingsOpenAI,<br>ConversationBufferWindowMemory))
+    C -->|builds| B((BaseTool))
+    H -->|builds| B((BaseTool))
+    B -->|creates tool| M[ImageCaptionTool]
+    B -->|creates tool| N[ObjectDetectionTool]
+    M -->|function capability| O[Generate Image Caption]
+    N -->|function capability| P[Detect Objects and Draw Bounding Boxes]
+    O --> T
+    P --> U
+    J --> S[Initialize Agent]
+    S -->|run| T[(Agent Execution with Image Captioning)]
+    S -->|run| U[(Agent Execution with Object Detection)]
+    T --> V[Return Caption Response]
+    U --> W[Return Object Detection Response]
+    V --> user_interaction[("User Interaction")]
+    W --> user_interaction
+```

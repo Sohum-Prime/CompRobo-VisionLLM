@@ -147,3 +147,7 @@ feeding your images and interacting with the LLM.
 If you encounter any issues during the installation or usage of the VisionLLM
 App, please open an issue on the GitHub repository with a detailed description
 of the problem.
+
+## Usage Guidelines
+
+

@@ -173,3 +173,28 @@ graph LR
     V --> user_interaction[("User Interaction")]
     W --> user_interaction
 ```
+
+## Skeletal Sequence Diagram for Multi-Agent, Multi-Modal VLN App
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant STT as Speech-To-Text (STT) Agent
+    participant Embed as Embeddings Agent
+    participant Search as Search Agent
+    participant VectorDB as Vector Database (Text, Image, LAS)
+    participant LLM as Language Model (LLM) Agent
+    participant TTS as Text-To-Speech (TTS) Agent
+
+    User->>STT: Speaks location and destination
+    STT->>Embed: Transcribed text (location, destination)
+    Embed->>Search: Embedding vectors
+    Search->>VectorDB: Dense Retrieval Query with embedding vectors
+    VectorDB->>Search: Initial matched map locations
+    Search->>Search: ReRank to improve result quality
+    Search->>LLM: Contextualized location data
+    LLM->>LLM: Uses RAG and AutoGPT for Chain-of-Thought
+    LLM->>LLM: Dynamic Template Filling
+    LLM->>TTS: Generated navigation/instructions
+    TTS->>User: Speaks out navigation/instructions
+```

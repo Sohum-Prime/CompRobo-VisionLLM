@@ -153,25 +153,26 @@ of the problem.
 A system architecture diagram has been provided to assist with debugging and application modification for specific use-cases.
 
 ```mermaid
-graph LR
-    A[CompRobo LLM-based Visual Transformer] -->|imports| C(("BlipProcessor,<br>BlipForConditionalGeneration,<br>DetrImageProcessor,<br>DetrForObjectDetection"))
-    A -->|imports| H(("torch,<br>os,<br>NamedTemporaryFile"))
-    A -->|imports| J((ChatOpenAI,<br>EmbeddingsOpenAI,<br>ConversationBufferWindowMemory))
-    C -->|builds| B((BaseTool))
-    H -->|builds| B((BaseTool))
-    B -->|creates tool| M[ImageCaptionTool]
-    B -->|creates tool| N[ObjectDetectionTool]
-    M -->|function capability| O[Generate Image Caption]
-    N -->|function capability| P[Detect Objects and Draw Bounding Boxes]
-    O --> T
-    P --> U
-    J --> S[Initialize Agent]
-    S -->|run| T[(Agent Execution with Image Captioning)]
-    S -->|run| U[(Agent Execution with Object Detection)]
-    T --> V[Return Caption Response]
-    U --> W[Return Object Detection Response]
-    V --> user_interaction[("User Interaction")]
-    W --> user_interaction
+C4Component
+
+Person(user, "User", "A user of the VLN application.")
+System_Boundary(vln, "VLN App") {
+    Container(stt, "STT Model-Based Agent", "Speech to Text", "Converts user speech into text.")
+    Container(embeddings, "Embeddings Model-Based Agent", "Embeddings Generation", "Processes text input to generate embeddings.")
+    Container(search, "Search Model-Based Agent", "Search & ReRank", "Performs dense retrieval search and ReRank.")
+    ContainerDb(vectorDB, "Vector Database", "Database", "Stores pre-loaded maps in text, image, and LAS modes.")
+    Container(llm, "Generation Model-Based Agent (LLM)", "RAG & AutoGPT", "Generates navigation instructions using RAG and AutoGPT.")
+    Container(tts, "TTS Model-Based Agent", "Text to Speech", "Converts text output into speech.")
+}
+
+Rel(user, stt, "Provides spoken input")
+Rel(stt, embeddings, "Sends text input")
+Rel(embeddings, search, "Sends embeddings")
+Rel(search, vectorDB, "Queries with Dense Retrieval & ReRank")
+Rel(vectorDB, search, "Returns search results")
+Rel(search, llm, "Sends processed input")
+Rel(llm, tts, "Sends generated text output")
+Rel(tts, user, "Provides audible instructions")
 ```
 
 ## Skeletal Sequence Diagram for Multi-Agent, Multi-Modal VLN App

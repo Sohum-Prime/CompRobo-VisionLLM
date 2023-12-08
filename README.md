@@ -194,7 +194,7 @@ sequenceDiagram
     VectorDB->>Search: Initial matched map locations
     Search->>Search: ReRank to improve result quality
     Search->>LLM: Contextualized location data
-    LLM->>LLM: Uses RAG and AutoGPT for Chain-of-Thought
+    LLM->>LLM: Uses RAG for Clew3D 6SM and AutoGPT for Tree-of-Thought
     LLM->>LLM: Dynamic Template Filling
     LLM->>TTS: Generated navigation/instructions
     TTS->>User: Speaks out navigation/instructions

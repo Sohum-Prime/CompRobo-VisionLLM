@@ -47,7 +47,6 @@ def process_test_images(image_paths):
 def knn(images):
     # we unpack by doing params from function, variable to assign -> I'm doing this because when I scroll on t I see tuple[list, list] and these are features, labels from the value being passed into knn function
     features, labels = t
-    print(features)
     test_features, test_labels = call_process_test_images
     print(test_features)
     X = np.array(features)
@@ -55,10 +54,10 @@ def knn(images):
     knn = KNeighborsClassifier(n_neighbors=1)
     knn.fit(X, y)
 
-    for test_feature in test_features:
+    for idx, test_feature in enumerate(test_features):
         test_feature_reshaped = test_feature.reshape(1, -1)
         most_similar_image_label = knn.predict(test_feature_reshaped)
-        print(most_similar_image_label)
+        print(f"Predicted: {most_similar_image_label}, True: {test_labels[idx]}")
 
 # Function calling
 directory = '/Users/zaynpatel/vision/visionLLM/CompRobo-VisionLLM/featureExtraction/images/train'

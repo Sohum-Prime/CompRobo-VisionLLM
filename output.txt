@@ -1,0 +1,99 @@
+Actual class:  After Room 126
+, Actual image: after126_4.JPG
+Nearest neighbors' classes: [' Near Elevator\n', ' After Room 126\n'], Images: ['IMG_3773.JPG', 'after126_5.JPG']
+Actual class:  After Room 126
+, Actual image: after126_5.JPG
+Nearest neighbors' classes: [' After Room 126\n', ' After Room 126\n'], Images: ['after126_5.JPG', 'after126_4.JPG']
+Actual class:  After Room 126
+, Actual image: after126_7.JPG
+Nearest neighbors' classes: [' Near Elevator\n', ' After Room 126\n'], Images: ['IMG_3774.JPG', 'after126_6.JPG']
+Actual class:  After Room 126
+, Actual image: after126_6.JPG
+Nearest neighbors' classes: [' After Room 126\n', ' After Room 126\n'], Images: ['after126_6.JPG', 'after126_7.JPG']
+Actual class:  After Room 126
+, Actual image: after126_2.JPG
+Nearest neighbors' classes: [' Near Elevator\n', ' After Room 126\n'], Images: ['IMG_3770.JPG', 'after126_3.JPG']
+Actual class:  After Room 126
+, Actual image: after126_3.JPG
+Nearest neighbors' classes: [' After Room 126\n', ' After Room 126\n'], Images: ['after126_3.JPG', 'after126_2.JPG']
+Actual class:  After Room 126
+, Actual image: after126_1.JPG
+Nearest neighbors' classes: [' Near Elevator\n', ' Near Elevator\n'], Images: ['IMG_3769.JPG', 'IMG_3781.JPG']
+Actual class:  After Room 126
+, Actual image: after126_10.JPG
+Nearest neighbors' classes: [' Near Elevator\n', ' After Room 126\n'], Images: ['IMG_3777.JPG', 'after126_9.JPG']
+Actual class:  After Room 126
+, Actual image: after126_11.JPG
+Nearest neighbors' classes: [' After Room 126\n', ' Near Elevator\n'], Images: ['after126_11.JPG', 'IMG_3781.JPG']
+Actual class:  After Room 126
+, Actual image: after126_8.JPG
+Nearest neighbors' classes: [' Near Elevator\n', ' After Room 126\n'], Images: ['IMG_3770.JPG', 'after126_2.JPG']
+Actual class:  After Room 126
+, Actual image: after126_9.JPG
+Nearest neighbors' classes: [' After Room 126\n', ' After Room 126\n'], Images: ['after126_9.JPG', 'after126_10.JPG']
+Actual class:  MAC Entrance
+, Actual image: IMG_3723.JPG
+Nearest neighbors' classes: [' MAC Entrance\n', ' MAC Entrance\n'], Images: ['IMG_3724.JPG', 'IMG_3722.JPG']
+Actual class:  MAC Entrance
+, Actual image: IMG_3722.JPG
+Nearest neighbors' classes: [' MAC Entrance\n', ' MAC Entrance\n'], Images: ['IMG_3721.JPG', 'IMG_3725.JPG']
+Actual class:  MAC Entrance
+, Actual image: IMG_3720.JPG
+Nearest neighbors' classes: [' MAC Entrance\n', ' MAC Entrance\n'], Images: ['IMG_3716.JPG', 'IMG_3721.JPG']
+Actual class:  MAC Entrance
+, Actual image: IMG_3721.JPG
+Nearest neighbors' classes: [' MAC Entrance\n', ' MAC Entrance\n'], Images: ['IMG_3725.JPG', 'IMG_3722.JPG']
+Actual class:  MAC Entrance
+, Actual image: IMG_3725.JPG
+Nearest neighbors' classes: [' MAC Entrance\n', ' MAC Entrance\n'], Images: ['IMG_3721.JPG', 'IMG_3722.JPG']
+Actual class:  MAC Entrance
+, Actual image: IMG_3719.JPG
+Nearest neighbors' classes: [' MAC Entrance\n', ' MAC Entrance\n'], Images: ['IMG_3718.JPG', 'IMG_3717 2.JPG']
+Actual class:  MAC Entrance
+, Actual image: IMG_3718.JPG
+Nearest neighbors' classes: [' MAC Entrance\n', ' MAC Entrance\n'], Images: ['IMG_3717 2.JPG', 'IMG_3719.JPG']
+Actual class:  MAC Entrance
+, Actual image: IMG_3724.JPG
+Nearest neighbors' classes: [' MAC Entrance\n', ' MAC Entrance\n'], Images: ['IMG_3723.JPG', 'IMG_3721.JPG']
+Actual class:  MAC Entrance
+, Actual image: IMG_3726.JPG
+Nearest neighbors' classes: [' MAC Entrance\n', ' MAC Entrance\n'], Images: ['IMG_3717 2.JPG', 'IMG_3718.JPG']
+Actual class:  MAC Entrance
+, Actual image: IMG_3717 2.JPG
+Nearest neighbors' classes: [' MAC Entrance\n', ' MAC Entrance\n'], Images: ['IMG_3718.JPG', 'IMG_3716.JPG']
+Actual class:  MAC Entrance
+, Actual image: IMG_3716.JPG
+Nearest neighbors' classes: [' MAC Entrance\n', ' MAC Entrance\n'], Images: ['IMG_3717 2.JPG', 'IMG_3720.JPG']
+Actual class:  Near Elevator
+, Actual image: IMG_3783.JPG
+Nearest neighbors' classes: [' Near Elevator\n', ' After Room 126\n'], Images: ['IMG_3782.JPG', 'after126_6.JPG']
+Actual class:  Near Elevator
+, Actual image: IMG_3769.JPG
+Nearest neighbors' classes: [' Near Elevator\n', ' Near Elevator\n'], Images: ['IMG_3769.JPG', 'IMG_3781.JPG']
+Actual class:  Near Elevator
+, Actual image: IMG_3782.JPG
+Nearest neighbors' classes: [' Near Elevator\n', ' After Room 126\n'], Images: ['IMG_3771.JPG', 'after126_3.JPG']
+Actual class:  Near Elevator
+, Actual image: IMG_3780.JPG
+Nearest neighbors' classes: [' Near Elevator\n', ' Near Elevator\n'], Images: ['IMG_3781.JPG', 'IMG_3769.JPG']
+Actual class:  Near Elevator
+, Actual image: IMG_3781.JPG
+Nearest neighbors' classes: [' Near Elevator\n', ' After Room 126\n'], Images: ['IMG_3779.JPG', 'after126_11.JPG']
+Actual class:  Near Elevator
+, Actual image: IMG_3779.JPG
+Nearest neighbors' classes: [' After Room 126\n', ' Near Elevator\n'], Images: ['after126_11.JPG', 'IMG_3781.JPG']
+Actual class:  Near Elevator
+, Actual image: IMG_3774.JPG
+Nearest neighbors' classes: [' After Room 126\n', ' After Room 126\n'], Images: ['after126_6.JPG', 'after126_7.JPG']
+Actual class:  Near Elevator
+, Actual image: IMG_3777.JPG
+Nearest neighbors' classes: [' After Room 126\n', ' After Room 126\n'], Images: ['after126_9.JPG', 'after126_10.JPG']
+Actual class:  Near Elevator
+, Actual image: IMG_3773.JPG
+Nearest neighbors' classes: [' After Room 126\n', ' After Room 126\n'], Images: ['after126_5.JPG', 'after126_4.JPG']
+Actual class:  Near Elevator
+, Actual image: IMG_3770.JPG
+Nearest neighbors' classes: [' Near Elevator\n', ' After Room 126\n'], Images: ['IMG_3770.JPG', 'after126_3.JPG']
+Actual class:  Near Elevator
+, Actual image: IMG_3771.JPG
+Nearest neighbors' classes: [' After Room 126\n', ' After Room 126\n'], Images: ['after126_3.JPG', 'after126_2.JPG']
